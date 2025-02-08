@@ -4,11 +4,11 @@ metadata:
   annotations:
     deployment.kubernetes.io/revision: "2"
     meta.helm.sh/release-name: test-release
-    meta.helm.sh/release-namespace: default
+    meta.helm.sh/release-namespace: argocd
   labels:
     app.kubernetes.io/managed-by: Helm
   name: test-deployment
-  namespace: default
+  namespace: argocd
 spec:
   progressDeadlineSeconds: 600
   replicas: 2
