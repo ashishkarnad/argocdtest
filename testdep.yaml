@@ -28,7 +28,7 @@ spec:
         app: test-app
     spec:
       containers:
-      - image: nginx:latest
+      - image: nginx:1.25-alpine
         imagePullPolicy: IfNotPresent
         name: nginx
         ports:
