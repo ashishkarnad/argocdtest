@@ -15,7 +15,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: test-app
+      app: test-App
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -25,7 +25,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: test-app
+        app: test-App
     spec:
       containers:
       - image: nginx:latest
