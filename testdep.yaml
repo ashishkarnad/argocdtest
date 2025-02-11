@@ -11,11 +11,11 @@ metadata:
   namespace: argocd
 spec:
   progressDeadlineSeconds: 600
-  replicas: 2
+  replicas: 4
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: test-app
+      app: test-app2
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -25,12 +25,12 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: test-app
+        app: test-app2
     spec:
       containers:
-      - image: nginx:1.25-alpine
+      - image: test-app2:1.25-alpine
         imagePullPolicy: IfNotPresent
-        name: nginx
+        name: test-app2cont
         ports:
         - containerPort: 80
           protocol: TCP
