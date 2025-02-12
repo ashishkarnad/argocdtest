@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    deployment.kubernetes.io/revision: "2"
+    deployment.kubernetes.io/revision: "1"
     meta.helm.sh/release-name: test-release
     meta.helm.sh/release-namespace: argocd
   labels:
